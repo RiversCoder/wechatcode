@@ -1,0 +1,10 @@
+<!--wxml是编写小程序骨架的文件-->
+<!--<div>-->
+<view class='container'>
+   <image src='/images/timg.jpg' class='user-image'></image>
+   <text class='user-title'>Hello , <text style='color:#666;'>十一月</text></text>
+
+   <view class='userbtn-content'>
+   		<text class='user-btn'>开启小程序之旅</text>
+   </view>
+</view>

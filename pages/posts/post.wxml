@@ -1,0 +1,35 @@
+<view class='p-container'>
+	
+	<!--轮播组件-->
+	<swiper class='p-swiper' indicator-dots='true' indicator-color='#fff' indicator-active-color='#666' autoplay='true' circular='true' interval='6000'>
+		<swiper-item>
+			<image src='/images/swiper01.jpg'></image>
+		</swiper-item>
+		<swiper-item>
+			<image src='/images/swiper02.jpg'></image>
+		</swiper-item>
+		<swiper-item>
+			<image src='/images/swiper03.jpg'></image>
+		</swiper-item>
+	</swiper>
+
+
+	<!--新闻列表-->
+	<view>
+		<view>
+			<image src='/images/avator/avator01.jpg'></image>
+			<text>Nov 20 2016</text>
+		</view>
+		<text>比利·林恩的中场故事</text>
+		<image src='/images/post/post01.jpg'></image>
+		<text>秋风萧萧，叶落飘飘，漫漫日长，种下一朵期望，在寂静中含苞待放，等待五十九秒的相思，换回一秒的重逢!深爱过，方知酒浓，等待着，五百次的回眸，换回一次的相逢!</text>
+		<view>
+			<image src='../../images/icon/chat1.png'></image>
+			<text>92</text>
+			<image src='../../images/icon/view.png'></image>
+			<text>62</text>
+		</view>
+	</view>
+
+
+</view>
