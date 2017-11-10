@@ -15,21 +15,23 @@
 
 
 	<!--新闻列表-->
-	<view>
-		<view>
-			<image src='/images/avator/avator01.jpg'></image>
-			<text>Nov 20 2016</text>
+	<block wx:for="{{dataArr}}" wx:for-item="nitem" wx:for-index='idx'>
+		<view class='p-content' >
+			<view class='pc-author'>
+				<image class='pc-author-avator' src='{{ nitem.nimgs.avator }}'></image>
+				<text class='pc-author-date'>{{                nitem.date }}</text>
+			</view>
+			<text class='pc-title'>{{dataArr.ntitle}}</text>
+			<image class='pc-image' src='{{nitem.nimgs.post}}'></image>
+			<text class='pc-intro'>{{nitem.nintro}}</text>
+			<view class='pc-like'>
+				<image class='pc-like-image' src='../../images/icon/chat1.png'></image>
+				<text class='pc-like-image-num' >{{ nitem.chatnum }}</text>
+				<image class='pc-like-image' src='../../images/icon/view.png'></image>
+				<text class='pc-like-image-num' >{{ nitem.viewnum }}</text>
+			</view>
 		</view>
-		<text>比利·林恩的中场故事</text>
-		<image src='/images/post/post01.jpg'></image>
-		<text>秋风萧萧，叶落飘飘，漫漫日长，种下一朵期望，在寂静中含苞待放，等待五十九秒的相思，换回一秒的重逢!深爱过，方知酒浓，等待着，五百次的回眸，换回一次的相逢!</text>
-		<view>
-			<image src='../../images/icon/chat1.png'></image>
-			<text>92</text>
-			<image src='../../images/icon/view.png'></image>
-			<text>62</text>
-		</view>
-	</view>
+	</block>
 
-
+	
 </view>
