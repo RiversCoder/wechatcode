@@ -1,0 +1,4 @@
+.stars-container{display:flex;flex-direction:row;}
+.stars-container image{width:16rpx;height:16rpx;padding-left:2rpx;}
+.stars-container text{color:#233866;font-size:18rpx;margin-left:25rpx;line-height:20rpx;}
+

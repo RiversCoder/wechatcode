@@ -1,0 +1,5 @@
+@import '../movie-stars/movie-stars-template.wxss';
+
+.mv-container{display:flex;flex-direction: column;}
+.mv-container .moviePic{width:200rpx;height:270rpx;}
+.mv-container .movieTitle{font-size:24rpx;color:#666;line-height:78rpx;}

@@ -1,0 +1,9 @@
+<template name='movie-stars'>
+    <view class='stars-container'>
+
+        <block wx:for="{{rate.rates}}" wx:for-item="ritem" wx:key="key">
+          <image src='{{ ritem == 1 ? "/images/icon/star.png" : "/images/icon/none-star.png" }}'></image>
+        </block>
+        <text>{{rate.rateText}}</text>
+    </view>
+</template>

@@ -1,0 +1,17 @@
+<template name='postItem'>
+  <view class='p-content' >
+			<view class='pc-author'>
+				<image class='pc-author-avator' src='{{nimgs.avator }}'></image>
+				<text class='pc-author-date'>{{date }}</text>
+			</view>
+			<text class='pc-title'>{{ntitle}}</text>
+			<image class='pc-image' src='{{nimgs.post}}'></image>
+			<text class='pc-intro'>{{nintro}}</text>
+			<view class='pc-like'>
+				<image class='pc-like-image' src='/images/icon/chat1.png'></image>
+				<text class='pc-like-image-num' >{{chatnum }}</text>
+				<image class='pc-like-image' src='/images/icon/view.png'></image>
+				<text class='pc-like-image-num' >{{viewnum }}</text>
+			</view>
+		</view>
+</template>

@@ -1,0 +1,23 @@
+<import src="../movie-item/movie-item-template.wxml" />
+
+<template name="movie-list">
+    <view class='ml-container'>
+
+
+      <view class='ml-header'>
+        <text class='ml-header-title'>{{mvarr[index]}}</text>
+        <view class='ml-header-more'>
+            <text class='ml-header-moret' data-list-id="{{index}}" catchtap='goMorePage'>更多</text>
+            <image class='ml-header-morei' src='/images/icon/arrow-right.png'></image>
+        </view>
+      </view>
+
+      <view class='ml-ItemContainer'>
+          <block wx:for="{{listItem}}" wx:for-item="eitem" wx:for-index="idx" wx:key="key">
+            <template is="movie-item" data="{{...eitem}}" />
+           </block>
+      </view>
+
+
+    </view>
+</template>

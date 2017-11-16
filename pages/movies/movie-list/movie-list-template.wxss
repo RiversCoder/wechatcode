@@ -1,0 +1,10 @@
+@import '../movie-item/movie-item-template.wxss';
+
+.ml-container{background:#fff;padding-bottom:28rpx;margin-bottom:30rpx;}
+.ml-container .ml-header{height:90rpx;width:100%;display:flex;flex-direction:row;justify-content:space-between;line-height:90rpx;}
+.ml-container .ml-header .ml-header-title{font-size:20rpx;padding-left:26rpx;}
+.ml-container .ml-header .ml-header-more{padding-right:30rpx;}
+.ml-container .ml-header .ml-header-more .ml-header-moret{color:#1f4ba5;padding-right:12rpx;}
+.ml-container .ml-header .ml-header-more .ml-header-morei{width:8rpx;height:16rpx;}
+
+.ml-ItemContainer{display:flex;flex-direction:row;justify-content:space-around;}

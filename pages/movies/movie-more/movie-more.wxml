@@ -1,0 +1,8 @@
+<import src="../movie-item/movie-item-template.wxml" />
+<scroll-view class='more-container' scroll-y="{{true}}" bindscrolltolower="scrolltolower">
+    <block wx:for="{{moviesData}}" wx:for-item="item" wx:key="key">
+        <template is="movie-item" data="{{...item}}"/>
+    </block>
+</scroll-view>
+
+

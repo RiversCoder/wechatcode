@@ -1,0 +1,4 @@
+@import '../movie-item/movie-item-template.wxss';
+
+.more-container{width:100%;height:1284rpx;margin-left:35rpx;margin-top:30rpx;margin-bottom:20rpx;/*display:flex;flex-direction:row;justify-content:space-around;flex-wrap:wrap;*/}
+.more-container .mv-container{float:left;margin-bottom:20rpx;margin-right:40rpx;}

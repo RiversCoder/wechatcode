@@ -2,14 +2,11 @@
 Page({
 
   onTap: function (e) {
-    //console.log(e);
-		/*wx.navigateTo({
-			url : '../posts/post'
-		});*/
 
-    wx.redirectTo({
-      url: '../posts/post'
-    });
+    wx.switchTab({
+			url : '../posts/post'
+		});
+    
   },
 
   /**
@@ -51,7 +48,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-    console.log('onUnload');
+    //console.log('onUnload');
   },
 
   /**

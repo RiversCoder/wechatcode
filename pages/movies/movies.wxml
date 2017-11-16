@@ -1,0 +1,7 @@
+<import src="./movie-list/movie-list-template.wxml" />
+
+<view>
+  <block wx:for="{{mvlist}}" wx:for-item="listItem" wx:for-index="idx" wx:key="key">
+      <template is="movie-list" data="{{ listItem:listItem,index:idx,mvarr:mvTitles }}"/>
+  </block>
+</view>

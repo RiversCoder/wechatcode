@@ -1,3 +1,5 @@
+<import src='./post-item/post-item-template.wxml' />
+
 <view class='p-container'>
 	
 	<!--轮播组件-->
@@ -15,22 +17,10 @@
 
 
 	<!--新闻列表-->
-	<block wx:for="{{dataArr}}" wx:for-item="nitem" wx:for-index='idx'>
-		<view class='p-content' >
-			<view class='pc-author'>
-				<image class='pc-author-avator' src='{{ nitem.nimgs.avator }}'></image>
-				<text class='pc-author-date'>{{                nitem.date }}</text>
-			</view>
-			<text class='pc-title'>{{dataArr.ntitle}}</text>
-			<image class='pc-image' src='{{nitem.nimgs.post}}'></image>
-			<text class='pc-intro'>{{nitem.nintro}}</text>
-			<view class='pc-like'>
-				<image class='pc-like-image' src='../../images/icon/chat1.png'></image>
-				<text class='pc-like-image-num' >{{ nitem.chatnum }}</text>
-				<image class='pc-like-image' src='../../images/icon/view.png'></image>
-				<text class='pc-like-image-num' >{{ nitem.viewnum }}</text>
-			</view>
-		</view>
+	<block wx:for="{{dataArr}}" wx:for-item="nitem" wx:for-index='idx' wx:key="key">
+    <view catchtap='openPostDetail' data-post-id='{{nitem.postId}}'>
+        <template is="postItem" data="{{...nitem}}" />
+    </view>
 	</block>
 
 	

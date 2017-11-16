@@ -1,0 +1,9 @@
+<import src="../movie-stars/movie-stars-template.wxml" />
+
+<template name="movie-item">
+    <view class='mv-container' data-movie-id="{{mId}}">
+        <image class='moviePic' src="{{mimage}}"></image>
+        <text class='movieTitle'>{{mname}}</text>
+        <template is="movie-stars" data="{{rate}}" />
+    </view>
+</template>
